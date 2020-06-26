@@ -585,3 +585,51 @@ li {
         line-height: 5vw;
     }
 }
+
+@media screen and (max-width:400px) {
+    /*Education*/
+    .education_card-first{
+        height: 64vw;
+    }
+
+    .education_card-first .education_title{
+        height:14vw;
+    }
+
+    .education_card-second {
+        height: 100vw;
+    }
+
+    .education_card-second .education_title {
+        height: 20vw;
+    }
+
+    .education_card-third {
+        height: 84vw;
+    }
+
+    .education_card-third .education_title {
+        height: 14vw;
+    }
+
+    /*Others*/
+    .flipCardContainer {
+        height: 60vw;
+        width: 80%;
+        margin-left: 8vw;
+    }
+
+    .flipCard_front {
+        line-height: 60vw;
+    }
+
+    /*Softskill*/
+    .softskill {
+        line-height: 7vw;
+    }
+
+    /*Language*/
+    .language {
+        line-height: 7vw;
+    }
+}
