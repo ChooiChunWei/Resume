@@ -1,0 +1,587 @@
+﻿/*General*/
+body {
+    margin:0;
+}
+
+h1 {
+    font-family: 'Merienda One', Helvetica, sans-serif;
+    font-size: 46px;
+    margin-top: 0;
+}
+
+h4 {
+    font-family: cursive;
+    margin-top:0px;margin-bottom:0;
+}
+
+h5 {
+    text-align: center;
+    font-family: 'Comic Sans MS';
+    font-size: 0.9vw;
+}
+
+li {
+    padding: 1vw 1.5vw 0vw 0vw;
+    text-align: justify;
+    font-family: 'Comic Sans MS';
+    font-size: 1.3vw;
+}
+
+.section_name {
+    text-align: left;
+    font-family: 'Segoe UI',Arial,sans-serif;
+    color: #757575;
+    font-size: 38.5px;
+    margin: 1.66%;
+}
+
+.container {
+    padding: 0.01em 16px;
+    background-color: #FBF2ED;
+}
+.innerContainer {
+    margin: 0;
+    overflow: hidden;
+}
+
+.card{
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)
+}
+
+.margin{
+    margin-bottom: 16px !important;
+    margin-top: 16px !important;
+    margin-left: 16px !important
+}
+
+.centralize_Content {
+    display: table;
+    margin: 0 auto;
+}
+
+.horizontal_rect {
+    background-color: white;
+    float: left;
+    width: 98%;
+}
+
+/*Profile*/
+.profile_pic_container {
+    float: left;
+    width: 41%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.profile_pic {
+    border-radius: 50%;
+    max-width: 150px;
+    float: right;
+}
+
+.profile_details_container {
+    float: left;
+    width: 54%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    margin-left:5%;
+}
+
+/*Education*/
+.education_card-first,.education_card-second, .education_card-third {
+    background-color: white;
+    float: left;
+    width: 30%;
+    margin: 1.66%;
+    height: 25vw;
+}
+
+.education_title {
+    padding: 0vw 1.5vw;
+    text-align: center;
+    font-family: 'Segoe UI',Arial,sans-serif;
+    font-size: 1.5vw;
+    height:6vw;
+}
+
+.education_content {
+    font-size: 1vw
+}
+
+/*Technical Skills*/
+.skill_name {
+    padding: 0vw 1.5vw;
+    text-align: center;
+    font-family: 'Segoe UI',Arial,sans-serif;
+    font-size: 2vw;
+    margin-top: 0;
+}
+
+/*---Others---*/
+/*Softskill*/
+.softskill {
+    margin: 1vw;
+    text-align: center;
+    font-family: 'Comic Sans MS';
+    font-size: 1.3vw;
+    line-height: 3.25vw;
+}
+
+/*Language*/
+.language {
+    margin: 1vw;
+    padding: 0vw 5vw;
+    font-family: 'Comic Sans MS';
+    font-size: 1.3vw;
+}
+
+.language_title {
+    margin-bottom: 0.5vw;
+}
+
+.bar {
+    border-radius: 16px;
+    height: 1.5vw;
+}
+
+.bar_background {
+    background-color: #f1f1f1;
+}
+
+.bar_color {
+    background-color: #009688;
+}
+
+/*Responsibilities*/
+.responsibilities {
+    margin: 1vw;
+    text-align: center;
+}
+
+.year {
+    font-family: 'Comic Sans MS';
+    font-size: 1.5vw;
+}
+
+.position {
+    font-family: 'Comic Sans MS';
+    font-size: 1.25vw;
+}
+
+/*Flip card on click*/
+.flipCardContainer{
+    width: 30%;
+    height: 25vw;
+    margin: 1.66%;
+    float: left;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)
+}
+
+.flipCard {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+}
+
+    .flipCard.flipped {
+        transform: rotateY(180deg);
+    }
+
+.flipCard__face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flipCard_front {
+    line-height: 25vw;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Segoe UI',Arial,sans-serif;
+    color: #757575;
+    font-size: 2.5vw;
+}
+
+.flipCard_back {
+    background-color: white;
+    transform: rotateY(180deg);
+}
+
+.language_flipCard{
+
+}
+.responsibilities_flipCard {
+}
+
+/*Animation*/
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fadeInDown {
+    animation-name: fadeInDown;
+    animation-duration: 4s;
+}
+
+@keyframes left{
+    from {
+        left: -300px;
+        opacity: 0
+    }
+
+    to {
+        left: 0;
+        opacity: 1
+    }
+}
+
+.left {
+    position: relative;
+    animation-name: left;
+    animation-duration: 4s;
+}
+
+/*Grow when hover*/
+.grow:hover {
+    transform: scale(1.05);
+}
+
+
+/*RWD*/
+@media screen and (max-width:1160px){
+
+    h5 {
+        font-size: 1.3vw;
+    }
+    
+    li {
+        font-size: 1.5vw;
+    }
+
+    /*Education*/
+    .education_title {
+        font-size: 1.8vw;
+        height:4vw;
+    }
+
+    .education_card-first, .education_card-second {
+        width: 46.68%;
+        height: 28vw;
+    }
+
+    .education_card-third{
+        width:auto;
+    }
+
+    .education_content{
+        font-size:1.5vw;
+    }
+
+    /*Others*/
+    .flipCardContainer {
+        width: 46.68%;
+        height: 29vw;
+    }
+
+    .flipCard_front {
+        line-height: 28vw;
+    }
+
+    /*Softskill*/
+    .softskill {
+        font-size: 1.55vw;
+        line-height: 3.25vw;
+    }
+
+    /*Language*/
+    .language {
+        font-size: 1.55vw;
+    }
+
+    /*Responsibilities*/
+    .responsibilities_flipCard {
+        margin-left:24vw;
+    }
+
+    .year {
+        font-size: 1.75vw;
+    }
+
+    .position {
+        font-size: 1.45vw;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    h5 {
+        font-size: 1.5vw;
+    }
+
+    li {
+        font-size: 2vw;
+    }
+
+    /*Education*/
+    .education_title {
+        font-size: 2.3vw;
+        height: 10vw;
+    }
+
+    .education_card-first, .education_card-second {
+        width: 46.68%;
+        height: 42vw;
+    }
+
+    .education_card-third {
+        height: 27vw;
+    }
+
+        .education_card-third .education_title {
+            height: 4vw;
+    }
+
+    .education_content {
+        font-size: 1.7vw;
+    }
+
+    /*Technical skill*/
+    .skill_name {
+        font-size: 3vw;
+    }
+}
+
+@media screen and (max-width:800px) {
+    h1 {
+        font-size: 26px;
+    }
+
+    h4 {
+        font-size:13px;
+    }
+
+    h5 {
+        font-size: 2vw;
+    }
+
+    .section_name {
+        font-size: 30px; /*2.5vw*/
+    }
+
+    /*Profile*/
+    .profile_pic_container {
+        height: 130px;
+        width: 100%;
+        margin-top:10px;
+    }
+
+    .profile_pic {
+        max-width: 120px;
+        float: none;
+    }
+
+    .profile_details_container {
+        height: 130px;
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+        margin-bottom:10px;
+    }
+
+    /*Education*/
+    .education_title {
+        font-size: 3vw;
+        height: 4vw;
+    }
+
+    .education_card-first{
+        width: 96.7%;
+        height: 32vw;
+    }
+
+    .education_card-second {
+        width: auto;
+    }
+
+    .education_card-second .education_title {
+        height: 8vw;
+    }
+
+    .education_card-third {
+        height: 36vw;
+    }
+
+    .education_content {
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width:700px) {
+    h5 {
+        font-size: 14px;
+    }
+
+    li {
+        font-size: 14px;
+    }
+
+    /*Education*/
+    .education_title {
+        font-size: 21px;
+        height: 4vw;
+    }
+
+    .education_card-first {
+        width: 96.7%;
+        height: 32vw;
+    }
+
+    .education_card-second {
+        width: auto;
+    }
+
+        .education_card-second .education_title {
+            height: 8vw;
+        }
+
+    .education_card-third {
+        height: 36vw;
+    }
+
+    .education_content {
+        font-size: 14px;
+    }
+
+    /*Others*/
+    .flipCardContainer {
+        width: 46.68%;
+        height: 36vw;
+        margin-left: 24vw;
+    }
+
+    .flipCard_front {
+        line-height: 36vw;
+        font-size:20px;
+    }
+
+    /*Softskill*/
+    .softskill {
+        font-size: 14px;
+        line-height: 4vw;
+    }
+
+    /*Language*/
+    .language {
+        font-size: 14px;
+    }
+
+    /*Responsibilities*/
+    .year {
+        font-size: 14px;
+    }
+
+    .position {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:630px) {
+    /*Education*/
+    .education_card-second {
+        height:48vw;
+    }
+
+    .education_card-third {
+        height: 41vw;
+    }
+
+    /*Others*/
+    .flipCardContainer {
+        width: 46.68%;
+        height: 40vw;
+        margin-left: 22vw;
+    }
+
+    .flipCard_front {
+        line-height: 40vw;
+    }
+}
+
+@media screen and (max-width:570px) {
+    /*Education*/
+    .education_card-first {
+        height: 38vw;
+    }
+
+    .education_card-second {
+        height: 54vw;
+    }
+
+    .education_card-third {
+        height: 47vw;
+    }
+
+    /*Others*/
+    .flipCardContainer {
+        width: 54%;
+        height: 44vw;
+        margin-left: 18vw;
+    }
+
+    .flipCard_front {
+        line-height: 42vw;
+    }
+}
+
+@media screen and (max-width:558px) {
+    .education_card-third .education_title {
+        height: 8vw;
+    }
+}
+
+@media screen and (max-width:514px) {
+    /*Education*/
+    .education_card-second {
+        height: 59vw;
+    }
+
+    .education_card-third {
+        height: 54vw;
+    }
+
+    /*Others*/
+    .flipCardContainer {
+        height: 47vw;
+    }
+
+    .flipCard_front {
+        line-height: 45vw;
+    }
+
+    /*Softskill*/
+    .softskill {
+        line-height: 5vw;
+    }
+}
