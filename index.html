@@ -5,21 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chooi Chun Wei - Resume</title>
     <link type="text/css" href="CSS/StyleSheet.css" rel="stylesheet">
+    <link type="text/css" href="CSS/aos.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Merienda+One' rel='stylesheet' type='text/css'>
-    
+
 </head>
 
 <body style="color:#000 !important;background-color:#f1f1f1 !important">
 
-<!--Page Container-->
-    <div style="max-width:99%;">
+    <!--Page Container-->
+    <div style="max-width:100%;">
 
         <div class="container card margin fadeInDown">
             <div class="container">
-                
+
                 <!--Profile-->
-               
+
                 <div class="innerContainer">
                     <div class="profile_pic_container">
                         <div style="display:inline">
@@ -35,10 +36,10 @@
                         </div>
                     </div>
                 </div>
-               
 
 
-               
+
+
             </div>
         </div>
 
@@ -46,7 +47,7 @@
         <div class="container card margin fadeInDown">
             <div class="container">
                 <div class="innerContainer">
-                    
+
                     <!--Title-->
                     <div style="float:left;width:100%">
                         <h1 class="section_name">
@@ -56,7 +57,7 @@
                     </div>
 
                     <!--1st education-->
-                    <div class="card left education_card-first">
+                    <div data-aos="fade-right" class="card education_card-first">
                         <div style="margin:1vw">
                             <h3 class="education_title">SMK BANDAR BARU SERI PETALING</h3>
                             <h5>2012-2016<br><br></h5>
@@ -68,7 +69,7 @@
                     </div>
 
                     <!--2nd education-->
-                    <div class="card left education_card-second">
+                    <div data-aos="fade-right" class="card education_card-second">
                         <div style="margin: 1vw">
                             <h3 class="education_title">DIPLOMA IN ICT WITH SPECIALISM IN SOFTWARE ENGINEERING</h3>
                             <h5>2017-2019<br>Asia Pacific University of Technology and Innovation </h5>
@@ -81,7 +82,7 @@
                     </div>
 
                     <!--3rd education-->
-                    <div class="card left education_card-third">
+                    <div data-aos="fade-right" class="card education_card-third">
                         <div style="margin:1vw;">
                             <h3 class="education_title">BSC (HONS) IN SOFTWARE ENGINEERING</h3>
                             <h5>2019-Present<br>Asia Pacific University of Technology and Innovation </h5>
@@ -109,7 +110,7 @@
                     </div>
 
                     <!--1st skill-->
-                    <div class="card horizontal_rect" style="margin:1vw;">
+                    <div data-aos="flip-down" class="card horizontal_rect" style="margin:1vw;">
                         <div style="margin:1vw">
                             <h3 class="skill_name">Programming Skills<hr /></h3>
                             <ul class="centralize_Content">
@@ -136,7 +137,7 @@
                     </div>
 
                     <!--2nd skill-->
-                    <div class="card horizontal_rect" style="margin:1vw;">
+                    <div data-aos="flip-down" class="card horizontal_rect" style="margin:1vw;">
                         <div style="margin:1vw">
                             <h3 class="skill_name">DATABASES<hr /></h3>
                             <ul class="centralize_Content">
@@ -161,7 +162,7 @@
                     </div>
 
                     <!--3rd skill-->
-                    <div class="card horizontal_rect" style="margin:1vw 1vw 2vw 1vw;">
+                    <div data-aos="flip-down" class="card horizontal_rect" style="margin:1vw 1vw 2vw 1vw;">
                         <div style="margin:1vw;">
                             <h3 class="skill_name">SOFTWARE DEVELOPMENT LIFE CYCLE<hr /></h3>
                             <ul class="centralize_Content">
@@ -198,7 +199,7 @@
                     </div>
 
                     <!--Contents-->
-                    <div class="card horizontal_rect" style="margin:1vw 1vw 2vw 1vw;">
+                    <div data-aos="zoom-in" class="card horizontal_rect" style="margin:1vw 1vw 2vw 1vw;">
                         <div style="margin:1vw;">
                             <ul class="centralize_Content">
                                 <li>
@@ -238,7 +239,7 @@
                 <div class="innerContainer">
 
                     <!--Softskill-->
-                    <div class="flipCardContainer grow">
+                    <div data-aos="fade-right" class="flipCardContainer">
                         <div class="flipCard">
                             <div class="flipCard__face flipCard_front">Softskill</div>
                             <div class="flipCard__face flipCard_back">
@@ -263,7 +264,7 @@
                     </script>
 
                     <!--Language-->
-                    <div class="flipCardContainer language_flipCard grow">
+                    <div data-aos="fade-down" class="flipCardContainer language_flipCard">
                         <div class="flipCard">
                             <div class="flipCard__face flipCard_front">Language</div>
                             <div class="flipCard__face flipCard_back">
@@ -299,7 +300,7 @@
                     </script>
 
                     <!--Responsibilities-->
-                    <div class="flipCardContainer responsibilities_flipCard grow">
+                    <div data-aos="fade-left" class="flipCardContainer responsibilities_flipCard">
                         <div class="flipCard">
                             <div class="flipCard__face flipCard_front">Responsibilities</div>
                             <div class="flipCard__face flipCard_back">
@@ -328,7 +329,15 @@
             </div>
         </div>
 
-    <!--End of Page Container-->
+        <!--End of Page Container-->
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="JS/aos.js"></script>
+    <script type="text/javascript">
+        AOS.init({
+            duration: 1000,
+        });
+    </script>
 </body>
 </html>
