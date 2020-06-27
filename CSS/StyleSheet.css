@@ -291,8 +291,13 @@ li {
 
     .education_card-third{
         width:auto;
+        height:auto;
     }
-
+    
+    .education_card-third .education_title {
+        height: auto;
+    }
+    
     .education_content{
         font-size:1.5vw;
     }
@@ -355,13 +360,9 @@ li {
         width: 46.68%;
         height: 42vw;
     }
-
-    .education_card-third {
-        height: 27vw;
-    }
-
-        .education_card-third .education_title {
-            height: 4vw;
+    
+    education_card-third .education_title {
+            height: auto;
     }
 
     .education_content {
@@ -414,24 +415,17 @@ li {
     /*Education*/
     .education_title {
         font-size: 3vw;
-        height: 4vw;
+        height: auto;
     }
 
     .education_card-first{
         width: 96.7%;
-        height: 32vw;
+        height: auto;
     }
 
     .education_card-second {
         width: auto;
-    }
-
-    .education_card-second .education_title {
-        height: 8vw;
-    }
-
-    .education_card-third {
-        height: 36vw;
+        height: auto;
     }
 
     .education_content {
@@ -451,24 +445,14 @@ li {
     /*Education*/
     .education_title {
         font-size: 21px;
-        height: 4vw;
     }
 
     .education_card-first {
         width: 96.7%;
-        height: 32vw;
     }
 
     .education_card-second {
         width: auto;
-    }
-
-        .education_card-second .education_title {
-            height: 8vw;
-        }
-
-    .education_card-third {
-        height: 36vw;
     }
 
     .education_content {
@@ -509,15 +493,6 @@ li {
 }
 
 @media screen and (max-width:630px) {
-    /*Education*/
-    .education_card-second {
-        height:48vw;
-    }
-
-    .education_card-third {
-        height: 41vw;
-    }
-
     /*Others*/
     .flipCardContainer {
         width: 46.68%;
@@ -531,19 +506,6 @@ li {
 }
 
 @media screen and (max-width:570px) {
-    /*Education*/
-    .education_card-first {
-        height: 38vw;
-    }
-
-    .education_card-second {
-        height: 54vw;
-    }
-
-    .education_card-third {
-        height: 47vw;
-    }
-
     /*Others*/
     .flipCardContainer {
         width: 54%;
@@ -556,22 +518,7 @@ li {
     }
 }
 
-@media screen and (max-width:558px) {
-    .education_card-third .education_title {
-        height: 8vw;
-    }
-}
-
 @media screen and (max-width:514px) {
-    /*Education*/
-    .education_card-second {
-        height: 59vw;
-    }
-
-    .education_card-third {
-        height: 54vw;
-    }
-
     /*Others*/
     .flipCardContainer {
         height: 47vw;
@@ -587,32 +534,17 @@ li {
     }
 }
 
-@media screen and (max-width:400px) {
-    /*Education*/
-    .education_card-first{
-        height: 64vw;
+@media screen and (max-width:492px) {
+    .responsibilities_flipCard{
+        height:54vw;
     }
 
-    .education_card-first .education_title{
-        height:14vw;
+    .responsibilities_flipCard .flipCard_front {
+        line-height: 52vw;
     }
+}
 
-    .education_card-second {
-        height: 100vw;
-    }
-
-    .education_card-second .education_title {
-        height: 20vw;
-    }
-
-    .education_card-third {
-        height: 84vw;
-    }
-
-    .education_card-third .education_title {
-        height: 14vw;
-    }
-
+@media screen and (max-width:440px) {
     /*Others*/
     .flipCardContainer {
         height: 60vw;
@@ -632,5 +564,52 @@ li {
     /*Language*/
     .language {
         line-height: 7vw;
+    }
+
+    /*Responsibilities*/
+    .responsibilities {
+        line-height: 5vw;
+    }
+}
+
+@media screen and (max-width:400px) {
+   /*Responsibilities*/
+    .responsibilities {
+        line-height: 4vw;
+    } 
+}
+
+@media screen and (max-width:360px) {
+    /*Others*/
+    .flipCardContainer {
+        height: 70vw;
+        width: 90%;
+        margin-left: 3.5vw;
+    }
+
+    .flipCard_front {
+        line-height: 70vw !important;
+    }
+
+    /*Softskill*/
+    .softskill {
+        line-height: 8vw;
+    }
+
+    /*Language*/
+    .language {
+        line-height: 8vw;
+    }
+
+    /*Responsibilities*/
+    .responsibilities {
+        line-height: 5vw;
+    }
+}
+
+@media screen and (max-width:330px) {
+    /*Responsibilities*/
+    .responsibilities {
+        line-height: 4vw;
     }
 }
