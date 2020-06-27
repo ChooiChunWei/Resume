@@ -241,30 +241,6 @@ li {
     animation-duration: 4s;
 }
 
-@keyframes left{
-    from {
-        left: -300px;
-        opacity: 0
-    }
-
-    to {
-        left: 0;
-        opacity: 1
-    }
-}
-
-.left {
-    position: relative;
-    animation-name: left;
-    animation-duration: 4s;
-}
-
-/*Grow when hover*/
-.grow:hover {
-    transform: scale(1.05);
-}
-
-
 /*RWD*/
 @media screen and (max-width:1160px){
 
